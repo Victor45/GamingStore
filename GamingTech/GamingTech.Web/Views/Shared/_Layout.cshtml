@@ -1,0 +1,52 @@
+﻿@using System.Web.Optimization
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    @Styles.Render("~/bundle/bootstrap/css")
+    @Styles.Render("~/bundle/font-awesome/css")
+    @Styles.Render("~/bundle/nouislider/css")
+    @Styles.Render("~/bundle/slick-theme/css")
+    @Styles.Render("~/bundle/slick/css")
+    @Styles.Render("~/bundle/style/css")
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        @Html.Partial("_Header")
+
+        <!-- Navigation-->
+        @Html.Partial("_Navigation")
+
+        <!-- NewProducts Section-->
+        <div class="container">
+            <div class="row">
+                @Html.Partial("_NewProductsSection")
+            </div>
+        </div>
+
+        @Html.Partial("_RelatedProducts")
+
+        <!-- Footer-->
+        @Html.Partial("_Footer")
+
+        <div class="container">
+            @RenderBody()
+        </div>
+
+        @Scripts.Render("~/bundle/bootstrap/js")
+        @Scripts.Render("~/bundle/jquery/js")
+        @Scripts.Render("~/bundle/jqueryzoom/js")
+        @Scripts.Render("~/bundle/main/js")
+        @Scripts.Render("~/bundle/nouislider/js")
+        @Scripts.Render("~/bundle/slick/js")
+    </div>
+</body>
+</html>
