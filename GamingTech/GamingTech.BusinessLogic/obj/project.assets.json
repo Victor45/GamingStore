@@ -1,0 +1,97 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "GamingTech.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "GamingTech.Helpers": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GamingTech.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GamingTech.Domain.dll": {}
+        }
+      },
+      "GamingTech.Helpers/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "compile": {
+          "bin/placeholder/GamingTech.Helpers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GamingTech.Helpers.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GamingTech.Domain/1.0.0": {
+      "type": "project",
+      "path": "../GamingTech.Domain/GamingTech.Domain.csproj",
+      "msbuildProject": "../GamingTech.Domain/GamingTech.Domain.csproj"
+    },
+    "GamingTech.Helpers/1.0.0": {
+      "type": "project",
+      "path": "../GamingTech.Helpers/GamingTech.Helpers.csproj",
+      "msbuildProject": "../GamingTech.Helpers/GamingTech.Helpers.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "GamingTech.Domain >= 1.0.0",
+      "GamingTech.Helpers >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\user\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\TWeb\\GamingTech\\GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj",
+      "projectName": "GamingTech.BusinessLogic",
+      "projectPath": "C:\\Users\\user\\Desktop\\TWeb\\GamingTech\\GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\TWeb\\GamingTech\\GamingTech.BusinessLogic\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {
+            "C:\\Users\\user\\Desktop\\TWeb\\GamingTech\\GamingTech.Domain\\GamingTech.Domain.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\TWeb\\GamingTech\\GamingTech.Domain\\GamingTech.Domain.csproj"
+            },
+            "C:\\Users\\user\\Desktop\\TWeb\\GamingTech\\GamingTech.Helpers\\GamingTech.Helpers.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\TWeb\\GamingTech\\GamingTech.Helpers\\GamingTech.Helpers.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

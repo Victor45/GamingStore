@@ -140,6 +140,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\User\AuthData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +164,8 @@
     <Content Include="Views\Shared\_NewProductsSection.cshtml" />
     <Content Include="Views\Shared\_RelatedProducts.cshtml" />
     <Content Include="Views\Auth\Reset.cshtml" />
+    <Content Include="Views\Auth\Index.cshtml" />
+    <Content Include="Views\Auth\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -172,7 +175,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GamingTech.BusinessLogic\GamingTech.BusinessLogic.csproj">
+      <Project>{fab4a1e0-5f75-47ed-a541-00f093520cd8}</Project>
+      <Name>GamingTech.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GamingTech.Domain\GamingTech.Domain.csproj">
+      <Project>{789DBA7A-E5CF-4779-8BF0-DFE6B55F7A6D}</Project>
+      <Name>GamingTech.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
