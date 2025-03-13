@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GamingTech.Domain.User;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,6 @@ namespace GamingTech.BusinessLogic.Interfaces
     public interface ISession
     {
         bool ValidateSessionId(string sessionId);
+        string AuthUser(UserAuthData data);
     }
 }

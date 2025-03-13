@@ -59,3 +59,7 @@ C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\WebGrease.dll
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\Antlr3.Runtime.pdb
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\Newtonsoft.Json.xml
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\System.Web.Optimization.xml
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\GamingTech.BusinessLogic.dll
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\GamingTech.Domain.dll
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\GamingTech.BusinessLogic.pdb
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\GamingTech.Domain.pdb

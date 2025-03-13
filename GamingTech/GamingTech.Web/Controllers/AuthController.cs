@@ -41,7 +41,7 @@ namespace GamingTech.Web.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(AuthData Data)
+        public ActionResult Login(UserAuthData Data)
         {
             //Auth Logic
             var uAuthData = new UserAuthData
