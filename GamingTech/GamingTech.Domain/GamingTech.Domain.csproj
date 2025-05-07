@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
@@ -8,6 +8,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GamingTech.Helpers\GamingTech.Helpers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
 
 </Project>

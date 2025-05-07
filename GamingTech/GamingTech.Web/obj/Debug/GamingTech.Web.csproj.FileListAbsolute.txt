@@ -63,3 +63,7 @@ C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\GamingTech.BusinessLogi
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\GamingTech.Domain.dll
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\GamingTech.BusinessLogic.pdb
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\GamingTech.Domain.pdb
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\EntityFramework.dll
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\EntityFramework.xml
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Web\bin\EntityFramework.SqlServer.xml

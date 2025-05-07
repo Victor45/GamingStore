@@ -46,6 +46,12 @@
       "frameworks": {
         "net48": {
           "targetAlias": "net48",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }

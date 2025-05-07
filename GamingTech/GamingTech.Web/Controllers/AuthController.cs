@@ -57,7 +57,8 @@ namespace GamingTech.Web.Controllers
         }
         public ActionResult Register()
         {
-            return View();
+            
+            return RedirectToAction("Products", "Home");
         }
         public ActionResult Reset()
         {

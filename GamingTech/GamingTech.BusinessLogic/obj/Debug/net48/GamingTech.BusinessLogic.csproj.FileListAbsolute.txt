@@ -12,3 +12,5 @@ C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\bin\Debug\net48\G
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\GamingTech.BusinessLogic.csproj.CopyComplete
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\GamingTech.BusinessLogic.dll
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\GamingTech.BusinessLogic.pdb
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\bin\Debug\net48\EntityFramework.SqlServer.dll
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\bin\Debug\net48\EntityFramework.dll
