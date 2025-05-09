@@ -14,5 +14,7 @@
     <ProjectReference Include="..\GamingTech.Domain\GamingTech.Domain.csproj" />
     <ProjectReference Include="..\GamingTech.Helpers\GamingTech.Helpers.csproj" />
   </ItemGroup>
-
+	<PropertyGroup>
+		<EmbeddedResourceUseDependentUponConvention>true</EmbeddedResourceUseDependentUponConvention>
+	</PropertyGroup>
 </Project>

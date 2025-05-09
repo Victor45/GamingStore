@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace GamingTech.Domain.User
 {
+    [Table("Users")]
     public class UDbTable
     {
         [Key]
@@ -21,7 +22,7 @@ namespace GamingTech.Domain.User
 
         [Required]
         [Display(Name = "Password")]
-        [StringLength(30, MinimumLength = 8, ErrorMessage = "Error")]
+        [StringLength(60, MinimumLength = 8, ErrorMessage = "Error")]
         public string Password { get; set; }
 
         [Required]

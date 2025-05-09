@@ -20,5 +20,10 @@ namespace GamingTech.BusinessLogic.BLStruct
         {
             return AuthUserAction(data);
         }
+
+        public PostResult UserRegister(RegisterData data)
+        {
+            return UserRegisterAction(data);
+        }
     }
 }

@@ -1,9 +1,9 @@
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\bin\Debug\net48\GamingTech.Helpers.dll
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\bin\Debug\net48\GamingTech.Helpers.pdb
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.csproj.AssemblyReference.cache
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.AssemblyInfo.cs
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\bin\Debug\net48\GamingTech.Helpers.dll
-C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\bin\Debug\net48\GamingTech.Helpers.pdb
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.dll
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.pdb

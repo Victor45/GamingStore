@@ -11,5 +11,6 @@ namespace GamingTech.BusinessLogic.Interfaces
     {
         bool ValidateSessionId(string sessionId);
         string AuthUser(UserAuthData data);
+        PostResult UserRegister(RegisterData data);
     }
 }

@@ -5,6 +5,7 @@ using GamingTech.Domain.User;
 using GamingTech.Web.Models.User;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -57,8 +58,32 @@ namespace GamingTech.Web.Controllers
         }
         public ActionResult Register()
         {
-            
-            return RedirectToAction("Products", "Home");
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(RegisterModel register)
+        {
+            if (ModelState.IsValid)
+            {
+                RegisterData user = new RegisterData
+                {
+                    Email = register.Email,
+                    Username = register.Username,
+                    Password = register.Password,
+                    RepPassword = register.RepPassword,
+                    LoginIP = "123",
+                    LoginDateTime = DateTime.Now
+                };
+
+                var userRegister = _session.UserRegister(user);
+
+                if(userRegister.Status)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            return View();
         }
         public ActionResult Reset()
         {

@@ -1,12 +1,12 @@
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\bin\Debug\net48\GamingTech.Domain.dll
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\bin\Debug\net48\GamingTech.Domain.pdb
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\bin\Debug\net48\GamingTech.Helpers.dll
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\bin\Debug\net48\GamingTech.Helpers.pdb
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\obj\Debug\net48\GamingTech.Domain.csproj.AssemblyReference.cache
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\obj\Debug\net48\GamingTech.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\obj\Debug\net48\GamingTech.Domain.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\obj\Debug\net48\GamingTech.Domain.AssemblyInfo.cs
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\obj\Debug\net48\GamingTech.Domain.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\bin\Debug\net48\GamingTech.Domain.dll
-C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\bin\Debug\net48\GamingTech.Domain.pdb
-C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\bin\Debug\net48\GamingTech.Helpers.dll
-C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\bin\Debug\net48\GamingTech.Helpers.pdb
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\obj\Debug\net48\GamingTech.Domain.csproj.CopyComplete
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\obj\Debug\net48\GamingTech.Domain.dll
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Domain\obj\Debug\net48\GamingTech.Domain.pdb
