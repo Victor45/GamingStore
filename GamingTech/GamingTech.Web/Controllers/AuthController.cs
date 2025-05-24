@@ -22,37 +22,40 @@ namespace GamingTech.Web.Controllers
             var bl = new BusinessLogic.BusinessLogic();
             _session = bl.GetSessionBL();
         }
-        // GET: Auth
-        public ActionResult Index()
-        {
-            var sId = "abcd";
-            bool isSessionValid = _session.ValidateSessionId(sId);
-
-            if (isSessionValid)
-            {
-                return RedirectToAction("Login");
-            }
-            return View();
-        }
 
         [HttpGet]
         public ActionResult Login()
         {
-            //UI Field for Auth
             return View();
         }
         [HttpPost]
-        public ActionResult Login(UserAuthData Data)
+        public ActionResult Login(UserLoginModel login)
         {
-            //Auth Logic
-            var uAuthData = new UserAuthData
+            if (ModelState.IsValid)
             {
-                Password = Data.Password,
-                UserName = Data.UserName,
-                RequestTime = DateTime.UtcNow
-            };
+                var Data = new UserLoginData
+                {
+                    
+                    Credential = login.Credential,
+                    Password = login.Password,
+                    LoginDateTime = DateTime.UtcNow,
+                    LastIP = "1234567890",
+                };
 
-            string sessionKey = _session.AuthUser(Data);
+                var userLogin = _session.UserLogin(Data);
+
+                if(userLogin.Status)
+                {
+                    HttpCookie cookie = _session.GenCookie(Data.Credential);
+                    ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    return View();
+                }
+
+            }
 
             return View();
         }
@@ -80,7 +83,7 @@ namespace GamingTech.Web.Controllers
 
                 if(userRegister.Status)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Login", "Auth");
                 }
             }
             return View();

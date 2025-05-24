@@ -116,8 +116,11 @@
     <Content Include="Content\fonts\slick.svg" />
     <Content Include="Content\img\GamingTech.png" />
     <Content Include="Content\img\hotdeal.png" />
+    <Content Include="Content\img\hyperx2.png" />
+    <Content Include="Content\img\keyboard.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\logo_g.png" />
+    <Content Include="Content\img\Mouse.png" />
     <Content Include="Content\img\product01.png" />
     <Content Include="Content\img\product02.png" />
     <Content Include="Content\img\product03.png" />
@@ -142,13 +145,18 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccessoryController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\AdminModAttribute.cs" />
+    <Compile Include="Filters\UserModAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\User\AuthData.cs" />
+    <Compile Include="Models\Product\Accessory.cs" />
     <Compile Include="Models\User\RegisterModel.cs" />
+    <Compile Include="Models\User\UserLoginModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -172,9 +180,10 @@
     <Content Include="Views\Shared\_NewProductsSection.cshtml" />
     <Content Include="Views\Shared\_RelatedProducts.cshtml" />
     <Content Include="Views\Auth\Reset.cshtml" />
-    <Content Include="Views\Auth\Index.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Home\Products.cshtml" />
+    <Content Include="Views\Base\Index.cshtml" />
+    <Content Include="Views\Shared\_Product.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -184,6 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Accessory\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GamingTech.BusinessLogic\GamingTech.BusinessLogic.csproj">

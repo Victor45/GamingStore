@@ -18,3 +18,5 @@ C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\G
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\GamingTech.BusinessLogic.pdb
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\GamingTech.BusinessLogic.Migrations.RenamedUDbTableToUsers.resources
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\GamingTech.BusinessLogic.Migrations.ChangedPasswordLength.resources
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\GamingTech.BusinessLogic.Migrations.AddedSessions.resources
+C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.BusinessLogic\obj\Debug\net48\GamingTech.BusinessLogic.Migrations.AddedUserRole.resources

@@ -5,9 +5,11 @@ using System.Web;
 
 namespace GamingTech.Web.Models.User
 {
-    public class AuthData
+    public class UserLoginModel
     {
-        public string UserName { get; set; }
+        public string Credential { get; set; }
         public string Password { get; set; }
+        public string LastIP { get; set; }
+        public DateTime LoginDateTime { get; set; }
     }
 }

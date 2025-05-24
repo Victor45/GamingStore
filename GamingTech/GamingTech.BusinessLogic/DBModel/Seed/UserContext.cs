@@ -17,5 +17,6 @@ namespace GamingTech.BusinessLogic.DBModel.Seed
         }
 
         public virtual DbSet<UDbTable> Users { get; set; }
+        public virtual DbSet<SessionDbTable> Sessions { get; set; }
     }
 }

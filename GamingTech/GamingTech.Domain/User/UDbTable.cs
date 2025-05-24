@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GamingTech.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -35,5 +36,7 @@ namespace GamingTech.Domain.User
 
         [StringLength(30)]
         public string LastIP { get; set; }
+
+        public URole Level { get; set; }
     }
 }

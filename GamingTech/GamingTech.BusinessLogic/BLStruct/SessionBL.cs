@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace GamingTech.BusinessLogic.BLStruct
 {
@@ -16,14 +17,24 @@ namespace GamingTech.BusinessLogic.BLStruct
             return ValidateSessionIdAction(sessionId);
         }
 
-        public string AuthUser(UserAuthData data)
-        {
-            return AuthUserAction(data);
-        }
-
         public PostResult UserRegister(RegisterData data)
         {
             return UserRegisterAction(data);
+        }
+
+        public PostResult UserLogin(UserLoginData data)
+        {
+            return UserLoginAction(data);
+        }
+
+        public HttpCookie GenCookie(string credential)
+        {
+            return Cookie(credential);
+        }
+
+        public UProfileData GetUserByCookie(string value)
+        {
+            return GetUserByCookieAction(value);
         }
     }
 }

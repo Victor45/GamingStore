@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace GamingTech.Domain.User
 {
-    public class UserAuthData
+    public class UserLoginData
     {
-        public string UserName { get; set; }
+        public string Credential { get; set; }
         public string Password { get; set; }
-        public DateTime RequestTime { get; set; }
-
+        public string LastIP { get; set; }
+        public DateTime LoginDateTime { get; set; }
     }
 }

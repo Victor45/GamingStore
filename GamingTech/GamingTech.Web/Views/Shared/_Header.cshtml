@@ -4,13 +4,21 @@
             <div id="top-header">
                 <div class="container">
                     <ul class="header-links pull-left">
-                        <li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-                        <li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-                        <li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+                        <li><a href="#"><i class="fa fa-phone"></i> -</a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i> GamingTech@gmail.com</a></li>
+                        <li><a href="#"><i class="fa fa-map-marker"></i> str. studentilor</a></li>
                     </ul>
                     <ul class="header-links pull-right">
                         <li><a href="#"><i class="fa fa-dollar"></i> MDL</a></li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+                        <li><a href="#"><i class="fa fa-user-o"></i> @ViewBag.Username</a></li>
+                        @if (System.Web.HttpContext.Current.Session["LoginStatus"] == "login")
+                        {
+                            <li><a href="#">Log Out</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="@Url.Action("Login", "Auth")">Log In</a></li>
+                        }
                     </ul>
                 </div>
             </div>
@@ -56,7 +64,7 @@
                                     <a href="#">
                                         <i class="fa fa-heart-o"></i>
                                         <span>Your Wishlist</span>
-                                        <div class="qty">2</div>
+                                        @*<div class="qty">2</div>*@
                                     </a>
                                 </div>
                                 <!-- /Wishlist -->
@@ -65,7 +73,7 @@
                                     <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                                         <i class="fa fa-shopping-cart"></i>
                                         <span>Your Cart</span>
-                                        <div class="qty">3</div>
+                                        @*<div class="qty">3</div>*@
                                     </a>
                                     <div class="cart-dropdown">
                                         <div class="cart-list">

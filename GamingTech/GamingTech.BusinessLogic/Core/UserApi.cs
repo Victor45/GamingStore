@@ -3,10 +3,13 @@ using GamingTech.Domain.User;
 using GamingTech.Helpers.Session;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Data.Entity.Validation;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace GamingTech.BusinessLogic.Core
 {
@@ -17,22 +20,28 @@ namespace GamingTech.BusinessLogic.Core
             return true;
         }
 
-        protected string AuthUserAction(UserAuthData data)
+        protected PostResult UserLoginAction(UserLoginData data)
         {
-            //Step 1 - Validate data
-            if (data != null)
+            UDbTable result;
+            var pass = PassHelper.HashGen(data.Password);
+            using (var db = new UserContext())
             {
-                //Step 2 - check if usernaame exits in ur DB
-                //select from User where data.UserName -> FirstOrDefault()
-
-                bool isUserNameValid = false;
-                if (isUserNameValid)
-                {
-
-                }
+                result = db.Users.FirstOrDefault(user => (user.Email == data.Credential || user.UserName == data.Credential) && user.Password == pass);
             }
-            //else var sessionKey = Generate
-            return string.Empty;
+
+            if (result == null)
+            {
+                return new PostResult { Status = false, Message = "The username/email or password is incorrect"};
+            }
+
+            using (var db = new UserContext())
+            {
+                result.LastIP = data.LastIP;
+                result.LastLogin = data.LoginDateTime;
+                db.Entry(result).State = EntityState.Modified;
+                db.SaveChanges();
+            }
+            return new PostResult { Status = true };
         }
 
         protected string GenerateSessionKey(string UserName, string noise)
@@ -68,29 +77,93 @@ namespace GamingTech.BusinessLogic.Core
                 };
 
                 db.Users.Add(result);
-
-                try
-                {
-                    db.SaveChanges();
-                }
-                catch (DbEntityValidationException ex)
-                {
-                    foreach (var eve in ex.EntityValidationErrors)
-                    {
-                        foreach (var ve in eve.ValidationErrors)
-                        {
-                            Console.WriteLine($"Property: {ve.PropertyName}, Error: {ve.ErrorMessage}");
-                        }
-                    }
-                    throw;
-                }
+                db.SaveChanges();
 
                 return new PostResult
                 {
-                    Status = true,
-                    Message = "Successfully registered"
+                    Status = true
                 };
             }
+        }
+
+        protected HttpCookie Cookie(string credential)
+        {
+            var apiCookie = new HttpCookie("gta_token")
+            {
+                Value = CookieGenerator.Create(credential)
+            };
+
+            UDbTable result;
+            using (var db = new UserContext())
+            {
+                result = db.Users.FirstOrDefault(user => user.Email == credential || user.UserName == credential);
+            }
+
+            credential = result.Email;
+
+            using (var db = new UserContext())
+            {
+                SessionDbTable current;
+                current = (from e in db.Sessions where e.UserEmail == credential select e).FirstOrDefault();
+
+                if (current != null)
+                {
+                    current.CookieString = apiCookie.Value;
+                    current.ExpireTime = DateTime.Now.AddMinutes(60);
+                    using (var bd = new UserContext())
+                    {
+                        bd.Entry(current).State = EntityState.Modified;
+                        bd.SaveChanges();
+                    }
+                }
+                else
+                {
+                    db.Sessions.Add(new SessionDbTable
+                    {
+                        UserEmail = credential,
+                        CookieString = apiCookie.Value,
+                        ExpireTime = DateTime.Now.AddMinutes(60)
+                    });
+                    db.SaveChanges();
+                }
+            }
+            return apiCookie;
+        }
+
+        protected UProfileData GetUserByCookieAction(string cookie)
+        {
+            SessionDbTable session;
+            UDbTable currentUser;
+
+            using (var db = new UserContext())
+            {
+                session = db.Sessions.FirstOrDefault(s => s.CookieString == cookie && s.ExpireTime > DateTime.Now);
+            }
+
+            if (session == null) return null;
+
+            using (var db = new UserContext())
+            {
+                var validate = new EmailAddressAttribute();
+                if (validate.IsValid(session.UserEmail))
+                {
+                    currentUser = db.Users.FirstOrDefault(u => u.Email == session.UserEmail);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+
+            var userprofile = new UProfileData
+            {
+                Id = currentUser.Id,
+                Username = currentUser.UserName,
+                Email = currentUser.Email,
+                FirstLogin = currentUser.LastLogin,
+            };
+
+            return userprofile;
         }
     }
 }
