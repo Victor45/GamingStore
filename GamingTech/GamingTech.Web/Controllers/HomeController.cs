@@ -1,4 +1,5 @@
-﻿using GamingTech.Web.Models.Product;
+﻿using GamingTech.BusinessLogic.Interfaces;
+using GamingTech.Web.Models.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,33 +8,40 @@ using System.Web.Mvc;
 
 namespace GamingTech.Web.Controllers
 {
-    public class HomeController : BaseController
-    {
-        // GET: Home
-        public ActionResult Index()
-        {
-            SessionStatus();
+     public class HomeController : BaseController
+     {
+          // GET: Home
+          private readonly IProduct _product;
+          public HomeController()
+          {
+               var bl = new BusinessLogic.BusinessLogic();
+               _product = bl.GetProductBL();
+          }
+          public ActionResult Index()
+          {
+               SessionStatus();
+               var db_products = _product.GetAccessories();
+               var products = new List<Accessory>();
 
-            //ViewBag.Username = "Guest";
+               foreach (var db_product in db_products)
+               {
+                    var product = new Accessory
+                    {
+                         Id = db_product.Id,
+                         Name = db_product.Name,
+                         Price = db_product.Price,
+                         Description = db_product.Description,
+                         ImageURL = db_product.ImageURL
+                    };
+                    products.Add(product);
+               }
 
-            var products = new List<Accessory>
-            {
-                new Accessory { ImageURL = Url.Content("~/Content/img/mouse.png"),Name = "Mouse Logitech", Price = 1200},
-                new Accessory { ImageURL = Url.Content("~/Content/img/keyboard.png"),Name = "Tastatură MK1", Price = 1500},
-                new Accessory { ImageURL = Url.Content("~/Content/img/product03.png"),Name = "Laptop Asus", Price = 15999},
-                new Accessory { ImageURL = Url.Content("~/Content/img/hyperx2.png"),Name = "Căști HyperX", Price = 1000},
-                new Accessory { ImageURL = Url.Content("~/Content/img/product05.png"),Name = "Product 5", Price = 9600},
-                new Accessory { ImageURL = Url.Content("~/Content/img/product06.png"),Name = "Product 6", Price = 2300},
-                new Accessory { ImageURL = Url.Content("~/Content/img/product07.png"),Name = "Product 7", Price = 1900},
-                new Accessory { ImageURL = Url.Content("~/Content/img/product08.png"),Name = "Product 8", Price = 3900},
-            };
+               return View(products);
+          }
 
-            return View(products);
-        }
-
-        public ActionResult Products()
-        {
-            return View();
-        }
-    }
+          public ActionResult Products()
+          {
+               return View();
+          }
+     }
 }

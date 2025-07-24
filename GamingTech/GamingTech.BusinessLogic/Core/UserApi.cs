@@ -161,9 +161,24 @@ namespace GamingTech.BusinessLogic.Core
                 Username = currentUser.UserName,
                 Email = currentUser.Email,
                 FirstLogin = currentUser.LastLogin,
+                Level = currentUser.Level,
             };
 
             return userprofile;
+        }
+
+        protected void UserLogoutAction(string cookie)
+        {
+            SessionDbTable session;
+            using (var db = new UserContext())
+            {
+                session = db.Sessions.FirstOrDefault(s => s.CookieString == cookie);
+                if (session != null)
+                {
+                    session.ExpireTime = DateTime.Now.AddDays(-1);
+                    db.SaveChanges();
+                }
+            }
         }
     }
 }

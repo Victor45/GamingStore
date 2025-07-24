@@ -1,17 +1,86 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@model List<GamingTech.Web.Models.Product.Accessory>
+
+@{
+     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!-- NAVIGATION -->
+<nav id="navigation">
+     <!-- container -->
+     <div class="container">
+          <!-- responsive-nav -->
+          <div id="responsive-nav">
+               <!-- NAV -->
+               <ul class="main-nav nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Keyboards</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Heaphones</a></li>
+                    <li><a href="#">Mouses</a></li>
+               </ul>
+               <!-- /NAV -->
+          </div>
+          <!-- /responsive-nav -->
+     </div>
+     <!-- /container -->
+</nav>
+<!-- /NAVIGATION -->
+<!-- Section -->
+<div class="section">
+     <!-- container -->
+     <div class="container">
+          <!-- row -->
+          <div class="row">
 
-<!DOCTYPE html>
+               <div class="col-md-12">
+                    <div class="section-title text-center">
+                         <h3 class="title">Related Products</h3>
+                    </div>
+               </div>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
+               <!-- product -->
+               @foreach (var product in Model)
+               {
+                    <div class="col-md-3 col-xs-6">
+                         <div class="product">
+                              <div class="product-img">
+                                   <img src="@product.ImageURL" alt="">
+                              </div>
+                              <div class="product-body">
+                                   @*<p class="product-category">@product.Category</p>*@
+                                   <h3 class="product-name"><a href="#">@product.Name</a></h3>
+                                   <h4 class="product-price">
+                                        MDL @product.Price.ToString("F2")
+                                        @*<del class="product-old-price">@$@product.OldPrice.ToString("F2")</del>*@
+                                   </h4>
+                                   @*<div class="product-rating">
+                                            @for (int i = 1; i <= 5; i++)
+                                            {
+                                                if (i <= product.Rating)
+                                                {
+                                                    <i class="fa fa-star"></i>
+                                                }
+                                                else
+                                                {
+                                                    <i class="fa fa-star-o"></i>
+                                                }
+                                            }
+                                        </div>*@
+                                   <div class="product-btns">
+                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
+                                        <button onclick="location.href='@Url.Action("ProductDetails", "Accessory", new { id = product.Id })'" class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
+                                   </div>
+                              </div>
+                              <div class="add-to-cart">
+                                   <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                              </div>
+                         </div>
+                    </div>
+               }
+               <!-- /product -->
 
-</head>
-<body>
-    <div>
-    </div>
-</body>
-</html>
+          </div>
+          <!-- /row -->
+     </div>
+     <!-- /container -->
+</div>
+<!-- /Section -->

@@ -1,0 +1,55 @@
+﻿@using System.Web.Optimization
+@model GamingTech.Web.Models.Product.Accessory
+
+@{
+     Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width" />
+     <title>AddProduct</title>
+     @Styles.Render("~/bundle/style/css")
+     @Styles.Render("~/bundle/bootstrap/css")
+</head>
+<body>
+     @using (Html.BeginForm("AddProduct", "Accessory", FormMethod.Post, new { enctype = "multipart/form-data", @id = "product-form" }))
+     {
+          @Html.AntiForgeryToken()
+
+          <div class="container">
+               <h1>Add Product</h1>
+               <p>Completează formularul pentru a adăuga un produs nou.</p>
+
+               @Html.ValidationSummary(true)
+
+               <hr>
+
+               <div class="form-group">
+                    <label><b>Product Name</b></label>
+                    @Html.TextBoxFor(model => model.Name, new { @class = "input", @placeholder = "Enter product name", required = "required" })
+               </div>
+
+               <div class="form-group">
+                    <label><b>Description</b></label>
+                    @Html.TextAreaFor(model => model.Description, new { @class = "input", @placeholder = "Enter product description", rows = "4", required = "required" })
+               </div>
+
+               <div class="form-group">
+                    <label><b>Price</b></label>
+                    @Html.TextBoxFor(model => model.Price, new { @class = "input", @type = "number", @step = "0.01", @placeholder = "Enter product price", required = "required" })
+               </div>
+
+               <div class="form-group">
+                    <label><b>Product Image</b></label>
+                    <input type="file" name="ImageFile" class="input" accept="image/*" required />
+               </div>
+
+               <hr>
+
+               <button type="submit" class="primary-btn" style="width: 100%; cursor: pointer;">Add Product</button>
+          </div>
+     }
+</body>
+</html>

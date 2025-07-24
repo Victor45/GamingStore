@@ -8,8 +8,11 @@ using System.Threading.Tasks;
 
 namespace GamingTech.BusinessLogic.Interfaces
 {
-    public interface IProduct
-    {
-        PostResult CreateProduct(PDbTable product);
-    }
+     public interface IProduct
+     {
+          PostResult CreateProduct(PDbTable product);
+          List<PDbTable> GetAccessories();
+
+          PDbTable GetProductById(int id);
+     }
 }

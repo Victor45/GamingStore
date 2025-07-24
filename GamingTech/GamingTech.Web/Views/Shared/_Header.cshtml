@@ -1,4 +1,6 @@
-﻿
+﻿@using GamingTech.Domain.User
+@using GamingTech.Domain.Enums 
+
         <header>
             <!-- TOP HEADER -->
             <div id="top-header">
@@ -9,16 +11,23 @@
                         <li><a href="#"><i class="fa fa-map-marker"></i> str. studentilor</a></li>
                     </ul>
                     <ul class="header-links pull-right">
-                        <li><a href="#"><i class="fa fa-dollar"></i> MDL</a></li>
-                        <li><a href="#"><i class="fa fa-user-o"></i> @ViewBag.Username</a></li>
-                        @if (System.Web.HttpContext.Current.Session["LoginStatus"] == "login")
-                        {
-                            <li><a href="#">Log Out</a></li>
-                        }
-                        else
-                        {
-                            <li><a href="@Url.Action("Login", "Auth")">Log In</a></li>
-                        }
+                         @{
+                              var user = Session["__SessionObject"] as GamingTech.Domain.User.UProfileData;
+                         }
+                         @if (user != null && user.Level == GamingTech.Domain.Enums.URole.Admin)
+                         {
+                              <li><a href="@Url.Action("Panel", "Admin")">Admin Panel</a></li>
+                         }
+                         <li><a href="#"><i class="fa fa-dollar"></i> MDL</a></li>
+                         <li><a href="#"><i class="fa fa-user-o"></i> @ViewBag.Username</a></li>
+                         @if (System.Web.HttpContext.Current.Session["LoginStatus"] == "login")
+                         {
+                              <li><a href="@Url.Action("Logout", "Auth")">Log Out</a></li>
+                         }
+                         else
+                         {
+                              <li><a href="@Url.Action("Login", "Auth")">Log In</a></li>
+                         }
                     </ul>
                 </div>
             </div>
@@ -35,7 +44,7 @@
                                 @*<a href="#" class="logo">
                                     <img src="~/Content/img/logo_g.png" alt="">
                                 </a>*@
-                                <a href="#" class="logo" style="font-size: 35px; font-weight: bold; color: white; display: inline-block; padding-top: 10px; margin-left: 50px ">
+                                <a href="@Url.Action("Index", "Home")" class="logo" style="font-size: 35px; font-weight: bold; color: white; display: inline-block; padding-top: 10px; margin-left: 50px ">
                                     Gaming<span style="color: red;">Tech</span>
                                 </a>
                             </div>

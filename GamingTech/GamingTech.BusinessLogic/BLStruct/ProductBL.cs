@@ -1,4 +1,5 @@
-﻿using GamingTech.BusinessLogic.Interfaces;
+﻿using GamingTech.BusinessLogic.Core;
+using GamingTech.BusinessLogic.Interfaces;
 using GamingTech.Domain.Product;
 using GamingTech.Domain.User;
 using System;
@@ -9,11 +10,21 @@ using System.Threading.Tasks;
 
 namespace GamingTech.BusinessLogic.BLStruct
 {
-    public class ProductBL : ProductApi, IProduct
-    {
-        public PostResult CreateProduct(PDbTable product)
-        {
-            throw new NotImplementedException();
-        }
-    }
+     public class ProductBL : ProductApi, IProduct
+     {
+          public PostResult CreateProduct(PDbTable product)
+          {
+               return CreateProductAction(product);
+          }
+
+          public List<PDbTable> GetAccessories()
+          {
+               return GetAccessoriesAction();
+          }
+
+          public PDbTable GetProductById(int id)
+          {
+               return GetProductByIdAction(id);
+          }
+     }
 }

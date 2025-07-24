@@ -36,5 +36,10 @@ namespace GamingTech.BusinessLogic.BLStruct
         {
             return GetUserByCookieAction(value);
         }
+
+        public void UserLogout(string cookie)
+        {
+            UserLogoutAction(cookie);
+        }
     }
 }

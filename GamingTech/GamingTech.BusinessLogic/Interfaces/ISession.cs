@@ -13,6 +13,7 @@ namespace GamingTech.BusinessLogic.Interfaces
         bool ValidateSessionId(string sessionId);
         PostResult UserRegister(RegisterData data);
         PostResult UserLogin(UserLoginData data);
+        void UserLogout(string cookie);
         HttpCookie GenCookie(string credential);
         UProfileData GetUserByCookie(string value);
     }

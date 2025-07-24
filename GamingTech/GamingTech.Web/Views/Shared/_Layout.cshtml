@@ -18,34 +18,25 @@
     @Styles.Render("~/bundle/style/css")
 </head>
 <body>
-    <div class="wrapper">
-        <!-- Header -->
-        @Html.Partial("_Header")
+     <div class="wrapper">
+          <!-- Header -->
+          @Html.Partial("_Header")
 
-        <!-- Navigation-->
-        @Html.Partial("_Navigation")
+          <div class="container">
+               @RenderBody()
+          </div>
 
-        <!-- NewProducts Section-->
-        <div class="container">
-            <div class="row">
-            </div>
-        </div>
+          @*@Html.Partial("_RelatedProducts", new List<>)*@
 
-        @Html.Partial("_RelatedProducts")
+          <!-- Footer-->
+          @Html.Partial("_Footer")
 
-        <!-- Footer-->
-        @Html.Partial("_Footer")
-
-        <div class="container">
-            @RenderBody()
-        </div>
-
-        @Scripts.Render("~/bundle/bootstrap/js")
-        @Scripts.Render("~/bundle/jquery/js")
-        @Scripts.Render("~/bundle/jqueryzoom/js")
-        @Scripts.Render("~/bundle/main/js")
-        @Scripts.Render("~/bundle/nouislider/js")
-        @Scripts.Render("~/bundle/slick/js")
-    </div>
+          @Scripts.Render("~/bundle/bootstrap/js")
+          @Scripts.Render("~/bundle/jquery/js")
+          @Scripts.Render("~/bundle/jqueryzoom/js")
+          @Scripts.Render("~/bundle/main/js")
+          @Scripts.Render("~/bundle/nouislider/js")
+          @Scripts.Render("~/bundle/slick/js")
+     </div>
 </body>
 </html>

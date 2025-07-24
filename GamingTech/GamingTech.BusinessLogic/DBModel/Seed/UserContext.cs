@@ -6,6 +6,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GamingTech.Domain.Product;
 using GamingTech.Domain.User;
 
 namespace GamingTech.BusinessLogic.DBModel.Seed
@@ -18,5 +19,6 @@ namespace GamingTech.BusinessLogic.DBModel.Seed
 
         public virtual DbSet<UDbTable> Users { get; set; }
         public virtual DbSet<SessionDbTable> Sessions { get; set; }
+        public virtual DbSet<PDbTable> Products { get; set; }
     }
 }

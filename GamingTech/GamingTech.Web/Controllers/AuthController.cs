@@ -59,12 +59,25 @@ namespace GamingTech.Web.Controllers
 
             return View();
         }
-        public ActionResult Register()
+        public ActionResult Logout()
         {
-            return View();
+            System.Web.HttpContext.Current.Session.Clear();
+            var cookie = ControllerContext.HttpContext.Request.Cookies["gta_token"];
+            if (cookie != null)
+            {
+                cookie.Expires = DateTime.Now.AddDays(-1);
+                ControllerContext.HttpContext.Response.Cookies.Add(cookie);
+                _session.UserLogout(cookie.Value);
+            }
+            return RedirectToAction("Index", "Home");
         }
 
-        [HttpPost]
+          [HttpGet]
+          public ActionResult Register()
+          {
+               return View();
+          }
+          [HttpPost]
         public ActionResult Register(RegisterModel register)
         {
             if (ModelState.IsValid)

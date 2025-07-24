@@ -8,17 +8,20 @@ using System.Threading.Tasks;
 
 namespace GamingTech.Domain.Product
 {
-    public class PDbTable
-    {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+     [Table("Products")]
+     public class PDbTable
+     {
+          [Key]
+          [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+          public int Id { get; set; }
 
-        [Required]
-        [Display(Name = "Name")]
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string ImageUrl { get; set; }
-        public float Price { get; set; }
-    }
+          [Required]
+          public string Name { get; set; }
+          [Required]
+          public string Description { get; set; }
+          [Required]
+          public float Price { get; set; }
+          [Required]
+          public string ImageURL { get; set; }
+     }
 }
