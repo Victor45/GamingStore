@@ -7,3 +7,13 @@ C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingT
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.dll
 C:\Users\user\Desktop\TWeb\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.pdb
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\bin\Debug\net48\GamingTech.Helpers.dll
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\bin\Debug\net48\GamingTech.Helpers.pdb
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.csproj.AssemblyReference.cache
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.AssemblyInfoInputs.cache
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.AssemblyInfo.cs
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.csproj.CoreCompileInputs.cache
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.sourcelink.json
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.dll
+D:\GamingTech\GamingStore\GamingTech\GamingTech.Helpers\obj\Debug\net48\GamingTech.Helpers.pdb

@@ -1,4 +1,6 @@
 ﻿using GamingTech.BusinessLogic.Interfaces;
+using GamingTech.Domain.Enums;
+using GamingTech.Domain.User;
 using GamingTech.Web.Models.Product;
 using System;
 using System.Collections.Generic;
@@ -12,16 +14,26 @@ namespace GamingTech.Web.Controllers
      {
           // GET: Home
           private readonly IProduct _product;
+          private readonly ISession _session;
           public HomeController()
           {
                var bl = new BusinessLogic.BusinessLogic();
                _product = bl.GetProductBL();
+               _session = bl.GetSessionBL();
           }
           public ActionResult Index()
           {
                SessionStatus();
-               var db_products = _product.GetAccessories();
-               var products = new List<Accessory>();
+            var apiCookie = Request.Cookies["gta_token"];
+            UProfileData uProfile = null;
+            List<int> favorites = new List<int>();
+            if (apiCookie != null)
+            {
+                uProfile = _session.GetUserByCookie(apiCookie.Value);
+                favorites = _product.GetFavorites(uProfile.Id);
+            }
+            var db_products = _product.GetAccessories();
+            var products = new List<Accessory>();
 
                foreach (var db_product in db_products)
                {
@@ -31,7 +43,8 @@ namespace GamingTech.Web.Controllers
                          Name = db_product.Name,
                          Price = db_product.Price,
                          Description = db_product.Description,
-                         ImageURL = db_product.ImageURL
+                         ImageURL = db_product.ImageURL,
+                         IsFavorite = favorites.Contains(db_product.Id),
                     };
                     products.Add(product);
                }
@@ -43,5 +56,11 @@ namespace GamingTech.Web.Controllers
           {
                return View();
           }
+
+        public ActionResult ProductsByCategory(int category)
+        {
+             var products = _product.GetProductsByCategory((PCategory)category);
+            return RedirectToAction("Index", products);
+        }
      }
 }

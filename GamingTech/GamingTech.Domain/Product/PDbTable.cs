@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GamingTech.Domain.Enums;
 
 namespace GamingTech.Domain.Product
 {
@@ -23,5 +24,10 @@ namespace GamingTech.Domain.Product
           public float Price { get; set; }
           [Required]
           public string ImageURL { get; set; }
+        [Required]
+        public int Stock { get; set; }
+
+        [Required]
+        public PCategory Category { get; set; }
      }
 }

@@ -108,6 +108,7 @@
   <ItemGroup>
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.min.css" />
+    <Content Include="Content\css\mine.css" />
     <Content Include="Content\css\nouislider.min.css" />
     <Content Include="Content\css\slick-theme.css" />
     <Content Include="Content\css\slick.css" />
@@ -189,6 +190,7 @@
     <Content Include="Views\Admin\TestView.cshtml" />
     <Content Include="Views\Admin\Panel.cshtml" />
     <Content Include="Views\Accessory\ProductDetails.cshtml" />
+    <Content Include="Views\Accessory\WishList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

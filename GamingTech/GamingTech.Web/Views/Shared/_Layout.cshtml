@@ -18,25 +18,28 @@
     @Styles.Render("~/bundle/style/css")
 </head>
 <body>
-     <div class="wrapper">
-          <!-- Header -->
-          @Html.Partial("_Header")
+    <div class="wrapper">
+        <!-- Header -->
+        @Html.Partial("_Header")
 
-          <div class="container">
-               @RenderBody()
-          </div>
+        <div style="background-image: url('@Url.Content("~/Content/img/gaming.png")'); background-size: cover; background-position: center; width:100%">
+            <div class="container" style="background-color: white;">
+                @RenderBody()
+            </div>
+        </div>
 
-          @*@Html.Partial("_RelatedProducts", new List<>)*@
+        @*@Html.Partial("_RelatedProducts", new List<>)*@
 
-          <!-- Footer-->
-          @Html.Partial("_Footer")
+        <!-- Footer-->
+        @Html.Partial("_Footer")
 
-          @Scripts.Render("~/bundle/bootstrap/js")
-          @Scripts.Render("~/bundle/jquery/js")
-          @Scripts.Render("~/bundle/jqueryzoom/js")
-          @Scripts.Render("~/bundle/main/js")
-          @Scripts.Render("~/bundle/nouislider/js")
-          @Scripts.Render("~/bundle/slick/js")
-     </div>
+        @Scripts.Render("~/bundle/bootstrap/js")
+        @Scripts.Render("~/bundle/jquery/js")
+        @Scripts.Render("~/bundle/jqueryzoom/js")
+        @Scripts.Render("~/bundle/main/js")
+        @Scripts.Render("~/bundle/nouislider/js")
+        @Scripts.Render("~/bundle/slick/js")
+    </div>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

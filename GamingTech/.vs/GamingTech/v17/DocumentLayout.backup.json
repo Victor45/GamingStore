@@ -1,0 +1,205 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GamingTech\\GamingStore\\GamingTech\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|d:\\gamingtech\\gamingstore\\gamingtech\\gamingtech.web\\controllers\\accessorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|solutionrelative:gamingtech.web\\controllers\\accessorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|D:\\GamingTech\\GamingStore\\GamingTech\\gamingtech.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|solutionrelative:gamingtech.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|D:\\GamingTech\\GamingStore\\GamingTech\\gamingtech.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|solutionrelative:gamingtech.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{789DBA7A-E5CF-4779-8BF0-DFE6B55F7A6D}|GamingTech.Domain\\GamingTech.Domain.csproj|d:\\gamingtech\\gamingstore\\gamingtech\\gamingtech.domain\\enums\\pcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{789DBA7A-E5CF-4779-8BF0-DFE6B55F7A6D}|GamingTech.Domain\\GamingTech.Domain.csproj|solutionrelative:gamingtech.domain\\enums\\pcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB4A1E0-5F75-47ED-A541-00F093520CD8}|GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj|d:\\gamingtech\\gamingstore\\gamingtech\\gamingtech.businesslogic\\blstruct\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB4A1E0-5F75-47ED-A541-00F093520CD8}|GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj|solutionrelative:gamingtech.businesslogic\\blstruct\\productbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB4A1E0-5F75-47ED-A541-00F093520CD8}|GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj|d:\\gamingtech\\gamingstore\\gamingtech\\gamingtech.businesslogic\\interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB4A1E0-5F75-47ED-A541-00F093520CD8}|GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj|solutionrelative:gamingtech.businesslogic\\interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAB4A1E0-5F75-47ED-A541-00F093520CD8}|GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj|d:\\gamingtech\\gamingstore\\gamingtech\\gamingtech.businesslogic\\core\\productapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAB4A1E0-5F75-47ED-A541-00F093520CD8}|GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj|solutionrelative:gamingtech.businesslogic\\core\\productapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|D:\\GamingTech\\GamingStore\\GamingTech\\gamingtech.web\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|solutionrelative:gamingtech.web\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|D:\\GamingTech\\GamingStore\\GamingTech\\gamingtech.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|solutionrelative:gamingtech.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|D:\\GamingTech\\GamingStore\\GamingTech\\gamingtech.web\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|solutionrelative:gamingtech.web\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|D:\\GamingTech\\GamingStore\\GamingTech\\gamingtech.web\\views\\home\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF9FBB93-5654-4439-9261-9ECB7F576D06}|GamingTech.Web\\GamingTech.Web.csproj|solutionrelative:gamingtech.web\\views\\home\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 142,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PCategory.cs",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Domain\\Enums\\PCategory.cs",
+              "RelativeDocumentMoniker": "GamingTech.Domain\\Enums\\PCategory.cs",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Domain\\Enums\\PCategory.cs",
+              "RelativeToolTip": "GamingTech.Domain\\Enums\\PCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:55:09.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GamingTech.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GamingTech.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:46:14.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccessoryController.cs",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Controllers\\AccessoryController.cs",
+              "RelativeDocumentMoniker": "GamingTech.Web\\Controllers\\AccessoryController.cs",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Controllers\\AccessoryController.cs",
+              "RelativeToolTip": "GamingTech.Web\\Controllers\\AccessoryController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAtwCMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:46:06.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "GamingTech.Web\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "GamingTech.Web\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T21:45:04.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductBL.cs",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.BusinessLogic\\BLStruct\\ProductBL.cs",
+              "RelativeDocumentMoniker": "GamingTech.BusinessLogic\\BLStruct\\ProductBL.cs",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.BusinessLogic\\BLStruct\\ProductBL.cs",
+              "RelativeToolTip": "GamingTech.BusinessLogic\\BLStruct\\ProductBL.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:35:57.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductApi.cs",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.BusinessLogic\\Core\\ProductApi.cs",
+              "RelativeDocumentMoniker": "GamingTech.BusinessLogic\\Core\\ProductApi.cs",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.BusinessLogic\\Core\\ProductApi.cs",
+              "RelativeToolTip": "GamingTech.BusinessLogic\\Core\\ProductApi.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAADwv2MAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:34:22.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProduct.cs",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.BusinessLogic\\Interfaces\\IProduct.cs",
+              "RelativeDocumentMoniker": "GamingTech.BusinessLogic\\Interfaces\\IProduct.cs",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.BusinessLogic\\Interfaces\\IProduct.cs",
+              "RelativeToolTip": "GamingTech.BusinessLogic\\Interfaces\\IProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:33:23.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Content\\css\\style.css",
+              "RelativeDocumentMoniker": "GamingTech.Web\\Content\\css\\style.css",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Content\\css\\style.css",
+              "RelativeToolTip": "GamingTech.Web\\Content\\css\\style.css",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-24T20:41:36.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GamingTech.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GamingTech.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T20:28:13.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GamingTech.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GamingTech.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T20:27:43.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Products.cshtml",
+              "DocumentMoniker": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Views\\Home\\Products.cshtml",
+              "RelativeDocumentMoniker": "GamingTech.Web\\Views\\Home\\Products.cshtml",
+              "ToolTip": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.Web\\Views\\Home\\Products.cshtml",
+              "RelativeToolTip": "GamingTech.Web\\Views\\Home\\Products.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-24T20:27:42.269Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

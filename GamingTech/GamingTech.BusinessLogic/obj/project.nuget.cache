@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "r+Vv0SIA2UrbPryeIWip5Z42/WQhe+bJ1MHNpWiwslm0EPHmgxsZ7d1RYE1YG0PVfKDvOdcJkhA0aoiUvia/FA==",
+  "dgSpecHash": "Sex9UjJeYBU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\TWeb\\GamingTech\\GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj",
+  "projectFilePath": "D:\\GamingTech\\GamingStore\\GamingTech\\GamingTech.BusinessLogic\\GamingTech.BusinessLogic.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512"
+    "C:\\Users\\Ion\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512"
   ],
   "logs": []
 }

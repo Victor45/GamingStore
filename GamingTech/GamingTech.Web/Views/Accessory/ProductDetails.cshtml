@@ -2,61 +2,61 @@
 @model GamingTech.Web.Models.Product.Accessory
 
 @{
-     ViewBag.Title = "ProductDetails";
-     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "ProductDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="section">
-     <!-- container -->
-     <div class="container">
-          <!-- row -->
-          <div class="row">
-               <!-- Product main img -->
-               <div class="col-md-5 col-md-push-2">
-                    <div id="product-main-img">
-                         <div class="product-preview">
-                              <img src="@Url.Content("~/" + Model.ImageURL)" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" >
-                         </div>
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- Product main img -->
+            <div class="col-md-5 col-md-push-2">
+                <div id="product-main-img">
+                    <div class="product-preview">
+                        <img src="@Url.Content("~/" + Model.ImageURL)" style="transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                     </div>
-               </div>
-               <!-- /Product main img -->
-               <!-- Product thumb imgs -->
-               <div class="col-md-2  col-md-pull-5">
-                    <div id="product-imgs">
+                </div>
+            </div>
+            <!-- /Product main img -->
+            <!-- Product thumb imgs -->
+            <div class="col-md-2  col-md-pull-5">
+                <div id="product-imgs">
+                </div>
+            </div>
+            <!-- /Product thumb imgs -->
+            <!-- Product details -->
+            <div class="col-md-5">
+                <div class="product-details">
+                    <h2 class="product-name">@Model.Name</h2>
+                    <div>
+                        <h3 class="product-price">@Model.Price MDL</h3>
+                        <span class="product-available">In Stock</span>
                     </div>
-               </div>
-               <!-- /Product thumb imgs -->
-               <!-- Product details -->
-               <div class="col-md-5">
-                    <div class="product-details">
-                         <h2 class="product-name">@Model.Name</h2>
-                         <div>
-                              <h3 class="product-price">@Model.Price MDL</h3>
-                              <span class="product-available">In Stock</span>
-                         </div>
-                         <p>@Model.Description</p>
+                    <p>@Model.Description</p>
 
-                         <div class="add-to-cart">
-                              <div class="qty-label">
-                                   Qty
-                                   <div class="input-number">
-                                        <input type="number">
-                                        <span class="qty-up">+</span>
-                                        <span class="qty-down">-</span>
-                                   </div>
-                              </div>
-                              <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                         </div>
-
-                         <ul class="product-btns">
-                              <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-                         </ul>
-
+                    <div class="add-to-cart">
+                        <div class="qty-label">
+                            Qty
+                            <div class="input-number">
+                                <input type="number">
+                                <span class="qty-up">+</span>
+                                <span class="qty-down">-</span>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                     </div>
-               </div>
-               <!-- /Product details -->
-          </div>
-          <!-- /row -->
-     </div>
-     <!-- /container -->
+
+                    <ul class="product-btns">
+                            <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
+                        </ul>
+
+                </div>
+            </div>
+            <!-- /Product details -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
 </div>
 <!-- /SECTION -->
