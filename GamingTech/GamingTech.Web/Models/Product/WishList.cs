@@ -7,7 +7,7 @@ namespace GamingTech.Web.Models.Product
 {
      public class WishList
      {
-          public List<int> WList {  get; set; }
+          public int ProductID {  get; set; }
 
           public int UserID { get; set; }
      }
